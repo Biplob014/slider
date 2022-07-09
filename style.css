@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: aqua;
+}
+
+.element i {
+  font-size: 8rem;
+}
+
+.element {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  font-size: 8rem;
+  color: lightcoral;
+  position: absolute;
+  width: 100%;
+  transform: scale(0);
+  transition: transform 0.5s;
+}
+
+.element.current {
+  transform: scale(1);
+  transition: transform 0.5s;
+}
